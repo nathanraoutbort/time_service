@@ -1,7 +1,11 @@
 Pull the project 
+
 Run "docker build -t time_service ." in the root directory of the project 
+
 Run "docker build -t nproxy ./nginx" in the root directory of the project
+
 Run "docker-compose up -d" in the root directory of the project
+
 
 Browse to your localhost/127.0.0.1 and add the ip as a query param
 Example : http://127.0.0.1/?ip=8.8.8.8

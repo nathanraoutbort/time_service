@@ -1,0 +1,24 @@
+version: '3.8'
+networks:
+  mynetwork:
+
+services:
+  nproxy:
+    container_name: nproxy
+    image: nproxy
+    build:
+      context: ./nginx
+    ports:
+        - 80:80
+    networks:
+       - mynetwork
+
+services:
+  time_service:
+    container_name: time_service
+    image: app
+    ports:
+        - 5001
+    networks:
+       - mynetwork
+

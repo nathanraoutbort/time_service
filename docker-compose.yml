@@ -15,7 +15,7 @@ services:
 
   time_service:
     container_name: time_service
-    image: app
+    image: time_service
     networks:
        - mynetwork
 

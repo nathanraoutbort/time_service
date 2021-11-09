@@ -16,8 +16,6 @@ services:
   time_service:
     container_name: time_service
     image: app
-    ports:
-        - 5001
     networks:
        - mynetwork
 

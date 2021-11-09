@@ -13,7 +13,6 @@ services:
     networks:
        - mynetwork
 
-services:
   time_service:
     container_name: time_service
     image: app
